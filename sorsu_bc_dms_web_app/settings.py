@@ -139,3 +139,6 @@ AUTH_USER_MODEL = 'dean.CustomUser'
 AUTHENTICATION_BACKENDS = [
   'django.contrib.auth.backends.ModelBackend'
 ]
+
+STATICFILES_DIRS = [BASE_DIR/'static']
+STATIC_ROOT = BASE_DIR / 'staticfiles'
