@@ -1,0 +1,74 @@
+{% extends 'qao_sidebar2.html' %}
+
+{% block content %}
+
+{% load static %}
+<div class="container">
+  <div>
+    <img id="img1" src="{% static 'qao/assets/reverse torch.png'%}" alt="img error">
+  </div>
+  <div class="sorsu-logo-container">
+  <img src="{% static 'qao/assets/SSU-logo.png'%}" alt=""><br>
+    <i id="heart">"Pamantasang May Puso<i class='bx bxs-heart' style='color:#b30909'  ></i>"</i>
+  </div>
+  <div>
+    <img id="img2" src="{% static 'qao/assets/clipart-of-torch-17-removebg.png'%}" alt="img error">
+  </div>
+</div>
+</div>
+<div>
+  <h2 id="hi-user">Hi, {{user.username}}</h2>
+</div>
+<div>
+  <h1 id="h-one">Welcome to SorSU</h1>
+  <h1 id="h-two">Document Management System</h1>
+  <h1 id="h-three">(Bulan-Campus)</h1>
+</div>
+<br><br>
+<div>
+  <h3 id="mission">MISSION</h3>
+</div>
+<br>
+<div class="mission-container">
+  <p id="mission-content">
+  To provide research-based quality education, innovations and collaborative <br>
+  extension services for sustainable nation and international development.
+  </p>
+</div>
+<br>
+<div>
+  <h3 id="vision">VISION</h3>
+</div>
+<br>
+<div class="mission-container">
+  <p id="vision-content">
+    A research university with a culture of excellence and developing globally <br>
+    competitive and values-oriented leaders and professionals.
+  </p>
+</div>
+<br>
+<div>
+  <h3 id="core-values">Core Values</h3>
+</div>
+<br>
+<div class="mission-container">
+  <p id="cv-content">
+    Humility, Excellence, Accountability, Resiliency, Trustworthiness
+  </p>
+</div>
+<br>
+<div>
+  <h3 id="quality-policy">Quality Policy Statement</h3>
+</div>
+<br>
+<div class="mission-container">
+  <p id="qp-content">
+    The <b>Sorsogon State University</b> commits to deliver quality education <br>
+    anchored on its vision and mision for the development and growth of the <br>
+    community.<b>SorSU</b> shall transform knowledge, through research instruction, <br>
+    extension and production as it adheres to statutory and regulatory requirements <br>
+    for continual improvement of the system.
+  </p>
+</div>
+
+{% endblock %}

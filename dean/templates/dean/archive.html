@@ -1,0 +1,32 @@
+{% extends 'dean_archive_sidebar.html' %}
+
+{% block content%}
+
+
+  <header>
+    <h1>Archives</h1>
+  </header>
+  <br>
+  <br>
+  
+  <div class="search-upload-sort-container">
+   <div class="search-container">
+    <input type="text" placeholder="Search">
+    <button>
+      <i class='bx bx-search'></i>
+    </button>
+   </div>
+   
+   <div class="archive">
+    <button id="archive-in">
+        <i class='bx bx-archive-in'></i>
+    </button>
+    
+    <button id="archive-out" >
+        <i class='bx bx-archive-out' ></i>
+    </button>
+   </div>
+  </div>  
+
+
+{% endblock %}

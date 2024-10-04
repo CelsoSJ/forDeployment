@@ -1,0 +1,44 @@
+{% extends 'qao_sidebar2.html'%}
+
+{% block content%}
+<div class="My-Profile-Header">
+  <header>
+    <h1>Files</h1>
+  </header>
+</div>
+<br><br>
+<div>
+  <!-- Button 1 -->
+  <button class="button1" id="btn1">Faculty Portfolio</button>
+  
+  <!-- Button 2 -->
+  <button class="button2" id="btn2">ISO Files</button>
+</div>
+
+<!-- Content area 1 -->
+<div class="content" id="content1">
+  <div class="search-upload-sort-container">
+    <div class="search-container">
+      <input type="text" placeholder="Search">
+      <button>
+        <i class='bx bx-search'></i>
+      </button>
+    </div>
+  </div>        
+</div>
+
+<!-- Content area 2 -->
+<div class="content" id="content2">
+  <div class="search-upload-sort-container">
+    <div class="search-container">
+      <input type="text" placeholder="Search">
+      <button>
+        <i class='bx bx-search'></i>
+      </button>
+    </div>
+    <div class="upload-sort-container">
+      <button class="sort"><i class='bx bx-folder-plus' undefined ></i></button>
+    </div>
+</div>
+
+{% endblock %}

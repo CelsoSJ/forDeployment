@@ -1,0 +1,152 @@
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',Arial, Helvetica, sans-serif;
+}
+
+
+body{
+  background-color: rgb(165, 17, 17);
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items: center;
+  width:100vw;
+  height:100vh;
+}
+
+.heading{
+  width:100%;
+  height:16%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #E4E9F7;
+  line-height: 34px;
+}
+
+.heading h3{
+  letter-spacing: 2px;
+}
+
+.log-in-container{
+  width:100%;
+  height:60%;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.log-in{
+  background-color: #E4E9F7;
+  width:70%;
+  height:90%;
+  border-radius:14px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content: space-around;
+}
+
+.log-in div{
+  width:80%;
+  height:22%;
+}
+
+.log-in-text{
+  font-size: 1.5em;
+}
+
+.log-in h3{
+  margin-top:12px;
+}
+
+.log-in-text, .button-container{
+  display:flex;
+  justify-content: center;
+}
+
+.username-container, .password-container{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.username-container{
+  padding-bottom: 6px;
+}
+
+.password-container{
+  padding-top:6px;
+}
+
+p{
+  letter-spacing: 1px;
+  font-weight:bold;
+}
+
+
+input{
+  height:64%;
+  padding-inline:6%;
+  border-style: solid;
+  border-width:1px;
+  border-color: #d4d2d2;
+  background-color: #d4d2d2;
+  border-radius: 8px;
+}
+
+input:hover{
+  border-color: rgb(165, 17, 17);
+}
+
+
+button{
+  width:50%;
+  height:70%;
+  border-style: none;
+  border-radius: 20px;
+  color:#f6f5ff;
+  font-size: 1em;
+  background-color: rgb(165, 17, 17);
+  margin-top:12px;
+}
+
+@media screen and (min-width:300px) and (max-width:425px){
+     h1{
+      font-size: 1em
+     }
+
+    h3{
+      font-size: .8em;
+     }
+}
+
+
+@media screen and (min-width:426px) and (max-width:650px){
+  h1{
+   font-size: 1.2em
+  }
+
+  h3{
+   font-size: .8em;
+  }
+}
+
+
+@media screen and (min-width:501px) and (max-width:800px){
+  .log-in{
+    width:50%;
+  }
+}
+
+@media screen and (min-width:801px){
+  .log-in{
+    width:40%;
+  }
+}
+

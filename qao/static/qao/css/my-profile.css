@@ -1,0 +1,198 @@
+.profile-info {
+  display: inline-block;
+  margin-left: 50%;
+}
+
+.profile-info div{
+  color:#000;
+}
+
+
+
+#icon img {
+  margin-top: 30px;
+  height: 230px;
+  width: 210px;
+  margin-left: 45%;
+  border-radius: 20px;
+}
+
+.profile-container {
+  display: grid;
+  align-items: center; 
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
+}
+
+/*navigation bar*/
+
+.nav-bar ul {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 60px;
+  margin-left: 10%;
+  margin-top: 3%;
+}
+
+.nav-bar li a{
+  color: black;
+  padding: 8px;
+  background-color: #E4E9F7;
+  font-weight: 800;
+  text-align: center;
+  
+}
+
+.nav-bar li a:hover {
+  text-decoration: underline;
+  color: #096cff;
+}
+
+.active {
+  color: #096cff;
+  text-decoration: underline;
+  
+}
+
+/*Profile Info*/
+
+#avatar img  {
+  height: 150px;
+  width: 150px;
+  margin-left: 140px;
+  border-radius: 20px;
+}
+
+#avatar button{
+  margin-left: 162px;
+}
+
+.p-info-container {
+  display: grid;
+  align-items: center; 
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: px;
+}
+
+#info {
+  background-color:#E4E9F7;
+}
+
+.profile {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.profile-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+  height: 50%;
+  border-radius: 30px;
+}
+
+.profile-content img {
+  height: 150px;
+  width: 150px;
+  margin-left: 35%;
+  margin-right: 30%;
+  margin-top: 3%;
+}
+
+.profile-content input {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Center the buttons */
+.container {
+text-align: center;
+}
+
+/* Add space between the buttons */
+.button1 {
+margin: 0 100px;
+background-color: #676869;
+color: #fff;
+padding: 10px 110px;
+border:double;
+border-radius: 10px;
+cursor: pointer;
+position: relative;
+}
+
+.button2 {
+margin: 0 100px;
+background-color: #676869;
+color: #fff;
+padding: 10px 125px;
+border:double;
+border-radius: 10px;
+cursor: pointer;
+position: relative;
+}
+
+
+.button1:active::before, .button2:active::before, .button1:focus, .button2:focus {
+background-color: #000; /* show the underline when the button is pressed */
+}
+
+
+.button3,.button4 {
+background-color: #676869 ;
+color: #fff;
+padding: 1px 25px;
+border:double;
+border-radius: 10px;
+cursor: pointer;
+}
+
+
+/* Style the content areas */
+.content {
+display: none; /* Hide the content areas by default */
+padding: 20px;
+border: 1px solid #ddd;
+margin-top: 20px;
+}
+
+body.dark .content{
+  color: #f6f5ff;
+}
+
+body.dark .profile-info div,p{
+  color:#f6f5ff;
+}
+
+.profile-info2 p{
+  color: black
+}
+body.dark .profile-info2 p{
+  color:var(--primary-color-light)
+}

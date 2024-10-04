@@ -1,0 +1,130 @@
+@media (min-width:250px) and (max-width:450px) and (min-height:300px){
+  .sidebar{
+    width:60px;
+  }
+  .ssu-logo-container img{
+    width:30px;
+    margin-left:4px;
+  }
+  .sidebar-toogle{
+    width:20px;
+    height:20px;
+    border-radius:10px;
+  }
+  .sidebar.open{
+    width:155px;
+  }
+  .system-title{
+    font-size:7px;
+  }
+  .text-container{
+    font-size:10px;
+  }
+  .file-icon-container img{
+    width:16px;
+  }
+  .menu-container p{
+    font-size:10px;
+  }
+  .profile-container img{
+    width:18px;
+  }
+  .profile-menu p{
+    font-size:10px;
+    letter-spacing: 1px;
+  }
+  .log-out-switch p{
+    font-size:10px;
+    letter-spacing: 1px;
+  }
+  .switch-container{
+    width:40px;
+    height:20px;
+    border-radius:10px;
+    
+  }
+  .switch{
+    width:14px;
+    height:14px;
+    border-radius: 7px;
+  }
+
+  /*content sizing*/
+  main{
+    margin-left:74px;
+    margin-right:10px;
+    margin-top:14px;
+    height:100vh;
+  }
+  header{
+    width:100%;
+    height:30px;
+  }
+  h1{
+    font-size:20px;
+  }
+  body.dark h1{
+    color:var(--primary-color-light)
+  }
+  .upload-sort-container{
+    padding-top:6px;
+    display:flex;
+    justify-content: flex-end;
+  }
+  .upload-sort-container button{
+    height: 28px;
+    border-style:solid;
+    border-width: 1px;
+    border-color:var(--toogle-color);
+    border-radius: 14px;
+  }
+  .upload-sort-container .upload{
+    width:70px;
+    margin-right:6px;
+  }
+  .upload-sort-container .sort{
+    width:60px;
+  }
+  .search-container{
+    display:flex;
+    justify-content: center;
+  }
+  .search-container input{
+    width:90%;
+    height:30px;
+    border-style:solid;
+    border-width:1px;
+    border-color:var(--toogle-color);
+    padding-inline: 12px;
+    border-top-left-radius:15px ;
+    border-bottom-left-radius:15px;
+    border-right-style: none;
+    background-color: var(--primary-color-light);
+  }
+  .search-container:hover{
+    input,button{
+      border-color:rgb(165, 17, 17);
+    }
+  }
+  .search-container button{
+    width:14%;
+    border-style:solid;
+    border-width:1px;
+    border-color:var(--toogle-color);
+    border-left-style: none;
+    border-top-right-radius:15px;
+    border-bottom-right-radius: 15px;
+    background-color: var(--primary-color-light);
+    display:flex;
+    align-items: center;
+  }
+
+  #icon img{
+    height: 30px;
+    width: 20px;
+  }
+}
+
+
+
+

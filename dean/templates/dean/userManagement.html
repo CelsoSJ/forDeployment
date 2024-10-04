@@ -1,0 +1,53 @@
+{% extends 'dean_userManagement_sidebar.html' %}
+
+{% block content %}
+
+
+<header>
+  <h1>User Management</h1>
+</header>
+<br>
+<br>
+<div class="search-upload-sort-container">
+
+  <div class="search-container">
+    <input type="text" placeholder="Search">
+    <button>
+      <i class='bx bx-search'></i>
+    </button>
+  </div>
+
+ 
+  <button id="myBtn">
+   <a id="createButton" href="{% url 'createUser' %}"> <i class='bx bx-user-plus'></i></a>
+  </button>
+
+ 
+
+</div>
+<br>
+<br>
+<table>
+  <tr>
+    <td>Name</td>
+    <td>Username</td>
+    <td>Department</td>
+    <td>Email</td>
+    <td>Role</td>
+  </tr>
+
+  {% for user in users %}
+     {% if user.department == department %}
+  <tr>
+      <td>{{ user.first_name }}&nbsp;{{user.last_name}}</td>
+      <td>{{ user.username }}</td>
+      <td>{{ user.department }}</td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.role }}</td>
+  </tr>
+   {% endif %}
+  {% endfor %}
+
+</table>
+
+{% endblock %}

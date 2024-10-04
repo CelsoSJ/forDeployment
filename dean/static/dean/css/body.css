@@ -1,0 +1,28 @@
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',Arial, Helvetica, sans-serif;
+}
+
+:root{
+  --body-color: #E4E9F7;
+  --sidebar-color: rgb(165, 17, 17);
+  --text-color: #707070;
+  --primary-color-light: #f6f5ff;
+  --toogle-color: #b4b1b1;
+  --button-color:rgb(203, 203, 203);
+  --hover-color:#18191a;
+}
+body{
+  background-color: var(--body-color);
+
+}
+body.dark{
+  --body-color:#18191a;
+  --sidebar-color:#242526;
+  --primary-color-light:#f6f5ff;
+  --toogle-color:#ccc;
+  --hover-color: rgb(165, 17, 17);
+}
