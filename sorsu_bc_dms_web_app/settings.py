@@ -77,6 +77,7 @@ WSGI_APPLICATION = 'sorsu_bc_dms_web_app.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
+import dj_database_url
 
 DATABASES = {
     'default': {
@@ -88,6 +89,11 @@ DATABASES = {
         'PORT': '3306',       # Default MySQL port
     }
 }
+
+# Override with environment variable settings if available
+DATABASE_URL = os.getenv('DATABASE_URL')
+if DATABASE_URL:
+    DATABASES['default'] = dj_database_url.config(default=DATABASE_URL)
 
 
 # Password validation
