@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-d27420$sf8(()ralsbh25f2^74zqr@9*gdfevl=a2zfcwse^7n'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = ['sorsu_bc_dms_web_app.vercel.app']
 
 
 # Application definition
@@ -123,8 +123,10 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
+import os
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
@@ -140,5 +142,3 @@ AUTHENTICATION_BACKENDS = [
   'django.contrib.auth.backends.ModelBackend'
 ]
 
-STATICFILES_DIRS = [BASE_DIR/'static']
-STATIC_ROOT = BASE_DIR / 'staticfiles'
