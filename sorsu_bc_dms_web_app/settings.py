@@ -83,11 +83,11 @@ import dj_database_url
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'sorsu_bc_dms_web_app',
-        'USER': 'root',
-        'PASSWORD': 'Wysiwyg@2001',
-        'HOST': '127.0.0.1',  # Or your MySQL server address
-        'PORT': '3306',       # Default MySQL port
+        'NAME': os.getenv('DB_NAME', 'sorsu_bc_dms_web_app'),
+        'USER': os.getenv('DB_USER', 'root'),
+        'PASSWORD': os.getenv('DB_PASSWORD', 'Wysiwyg@2001'),
+        'HOST': os.getenv('DB_HOST', '127.0.0.1'),
+        'PORT': os.getenv('DB_PORT', '3306'),
     }
 }
 
