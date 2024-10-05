@@ -15,6 +15,6 @@
   ],
   "env": {
     "DJANGO_SETTINGS_MODULE": "sorsu_bc_dms_web_app.settings.production",
-    "PYTHON_VERSION": "3.12"
+    "PYTHON_VERSION": 3.12
   }
 }
