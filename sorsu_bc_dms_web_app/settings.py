@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-d27420$sf8(()ralsbh25f2^74zqr@9*gdfevl=a2zfcwse^7n'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['sorsu_bc_dms_web_app.vercel.app']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -77,24 +77,17 @@ WSGI_APPLICATION = 'sorsu_bc_dms_web_app.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
-import os
-import dj_database_url
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.getenv('DB_NAME', 'sorsu_bc_dms_web_app'),
-        'USER': os.getenv('DB_USER', 'root'),
-        'PASSWORD': os.getenv('DB_PASSWORD', 'Wysiwyg@2001'),
-        'HOST': os.getenv('DB_HOST', '127.0.0.1'),
-        'PORT': os.getenv('DB_PORT', '3306'),
+        'NAME': 'sorsu_bc_dms_web_app',
+        'USER': 'root',
+        'PASSWORD': 'Wysiwyg@2001',
+        'HOST': '127.0.0.1',  # Or your MySQL server address
+        'PORT': '3306',       # Default MySQL port
     }
 }
-
-# Override with environment variable settings if available
-DATABASE_URL = os.getenv('DATABASE_URL')
-if DATABASE_URL:
-    DATABASES['default'] = dj_database_url.config(default=DATABASE_URL)
 
 
 # Password validation
@@ -131,9 +124,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = 'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
@@ -148,4 +139,3 @@ AUTH_USER_MODEL = 'dean.CustomUser'
 AUTHENTICATION_BACKENDS = [
   'django.contrib.auth.backends.ModelBackend'
 ]
-
