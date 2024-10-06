@@ -19,6 +19,8 @@ def login_view(request):
         #check user role and redirect them to their dashboard
         if user.role.name =='Dean':
           return redirect(reverse('userManagement'))
+        elif user.role.name =='Faculty':
+          return redirect(reverse('homepage'))
         
       else:
         form.add_error(None, 'Invalid username or password')  

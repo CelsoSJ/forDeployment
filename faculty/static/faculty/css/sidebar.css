@@ -1,0 +1,170 @@
+.sidebar{
+  background-color: var(--sidebar-color);
+  height:100vh;
+  position:fixed;
+  top:0;
+  left:0;
+  padding:10px;
+  transition: all .3s ease;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 100;
+}
+
+.ssu-logo-container{
+  width:100%;
+  height: 10%;
+  display: flex;
+  column-gap:5px;
+  align-items: center;
+  overflow: hidden;
+  
+  
+}
+
+.system-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity:0;
+  color:var(--primary-color-light);
+  letter-spacing: 1px;
+  
+}
+.sidebar.open .system-title{
+  opacity:1
+}
+.text-container{
+  opacity:0;
+  margin-left:6px;
+}
+
+
+.sidebar.open .text-container{
+  height:100%;
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity:1;
+  letter-spacing: 1px;
+}
+
+
+.sidebar-toogle{
+  background-color: var(--toogle-color);
+  position:absolute;
+  right: -10px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.sidebar-toogle i{
+  position:absolute;
+
+}
+.sidebar-toogle .bx-chevron-left{
+  opacity:0;
+}
+
+.sidebar.open .bx-chevron-left{
+  opacity:1;
+}
+
+.sidebar.open .bx-chevron-right{
+  opacity:0;
+}
+
+
+
+.menu-container{
+  margin-top:20%;
+  width:100%;
+  height:60%;
+  row-gap:10px;
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+}
+
+.menu-container a{
+  text-decoration: none;
+  color:var(--primary-color-light);
+  width:100%;
+  height:16%;
+ 
+}
+ a:hover{
+  background-color: var(--hover-color);
+  border-radius: 5px;
+}
+
+body.dark a:hover{
+  background-color: var(--hover-color);
+}
+
+a{
+  display:flex;
+  align-items: center;
+  column-gap:10px;
+  padding-left:10px;
+  overflow:hidden;
+}
+
+a p{
+  opacity:0;
+}
+
+.sidebar.open a p{
+  opacity:1;
+  letter-spacing: 1px;
+}
+
+
+
+.log-out-switch{
+  margin-top:20%;
+  width:100%;
+  height:10%;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  position:relative;
+}
+
+.log-out-switch a{
+  height:90%;
+  padding-inline: 6px;
+  margin-left:4px;
+  text-decoration: none;
+  color:var(--primary-color-light);
+  padding-left:0;
+  opacity:0;
+  transition: all .3s ease;
+}
+
+.sidebar.open .log-out-switch a{
+  opacity:1;
+}
+
+.switch-container{
+  background-color: var(--toogle-color);
+  position:absolute;
+  right:0;
+  display:flex;
+  align-items: center;
+}
+
+.switch{
+  background-color: var(--text-color);
+  position: absolute;
+  left:4px;
+  transition: all .3s ease
+}
+
+body.dark .switch{
+  left:22px;
+  background-color: var(--body-color);
+}
