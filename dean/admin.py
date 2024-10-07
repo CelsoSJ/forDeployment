@@ -25,7 +25,7 @@ class ProgramAdmin(admin.ModelAdmin):
 
   def formfield_for_foreignkey(self, db_field, request, **kwargs):
     if db_field.name == "program_chair":
-      kwargs["queryset"] = CustomUser.objects.filter(role=2)
+      kwargs["queryset"] = CustomUser.objects.filter(role=3)
     return super().formfield_for_foreignkey(db_field, request, **kwargs)
   
 

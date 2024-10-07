@@ -18,7 +18,7 @@ def login_view(request):
         login(request, user)
         #check user role and redirect them to their dashboard
         if user.role.name =='Dean':
-          return redirect(reverse('userManagement'))
+          return redirect(reverse('home_page'))
         elif user.role.name =='Faculty':
           return redirect(reverse('homepage'))
         
@@ -29,7 +29,7 @@ def login_view(request):
   else:
     form = LoginForm()
 
-  return render(request, 'login/login.html', {'form':form})
+  return render(request, 'login/Login.html', {'form':form})
 
 
 

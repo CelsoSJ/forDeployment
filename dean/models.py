@@ -35,7 +35,7 @@ class CustomUser(AbstractUser):
 
 
 class Program(models.Model):
-  name = models.CharField(max_length=4, null=True)
+  name = models.CharField(max_length=5, null=True)
   department = models.ForeignKey(Department, on_delete=models.CASCADE)
   program_chair = models.OneToOneField(CustomUser, on_delete=models.SET_NULL, null=True)
 
